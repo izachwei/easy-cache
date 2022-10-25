@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/badge/JDK-1.8+-green.svg" >
     </a>
     <a>
-        <img src="https://img.shields.io/badge/springBoot-2.6.7-green.svg" >
+        <img src="https://img.shields.io/badge/springBoot-2.6.2-green.svg" >
     </a>
     <a href="https://www.jetbrains.com">
         <img src="https://img.shields.io/badge/IntelliJ%20IDEA-support-blue.svg" >
