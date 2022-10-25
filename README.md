@@ -45,11 +45,11 @@
 
 * 引入依赖
 
-```aidl
+```pom
 
 ```
 
-* SpringBoot 应用启动类上添加注解 `@EnableCache`
+* SpringBoot 应用启动类上添加注解 `@EnableCache`，开启缓存功能
 
 ```java
 import com.easycache.cacheapi.starter.enable.EnableCache;
