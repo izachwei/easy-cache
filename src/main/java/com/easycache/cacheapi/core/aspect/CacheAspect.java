@@ -11,7 +11,7 @@ import org.aspectj.lang.annotation.Aspect;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
+import org.springframework.util.ObjectUtils;
 
 import java.util.List;
 
@@ -40,7 +40,7 @@ public class CacheAspect {
 
     private String getCacheKey(ProceedingJoinPoint jp, Cached cacheable) {
         String cacheKey = cacheable.key();
-        if (StringUtils.isEmpty(cacheKey)) {
+        if (ObjectUtils.isEmpty(cacheKey)) {
             cacheKey = MD5Util.toMD5(jp.getSignature().toString());
         }
         return cacheKey;
