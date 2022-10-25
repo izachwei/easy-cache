@@ -1,9 +1,4 @@
 <p align="center">
-<img src="https://images.gitee.com/uploads/images/2019/0626/231046_f44892b9_709883.png" border="0" />
-
-</p>
-
-<p align="center">
 	<strong>一个基于 SpringBoot 的缓存组件（starter）</strong>
 </p>
 
@@ -12,7 +7,7 @@
         <img src="https://img.shields.io/badge/JDK-1.8+-green.svg" >
     </a>
     <a>
-        <img src="https://img.shields.io/badge/springBoot-2.6.x__2.x.x-green.svg" >
+        <img src="https://img.shields.io/badge/springBoot-2.6.7.svg" >
     </a>
     <a href="https://www.jetbrains.com">
         <img src="https://img.shields.io/badge/IntelliJ%20IDEA-support-blue.svg" >
@@ -21,6 +16,7 @@
         <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" >
     </a>
 </p>
+
 # easy-cache
 ## 介绍
 * 支持 Springboot，基于注解的、可扩展的、即开即用的通用缓存组件。
