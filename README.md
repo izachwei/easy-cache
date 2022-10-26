@@ -58,8 +58,7 @@ public class StudyApplication {
 }
 ```
 
-* 添加缓存
-* 需要缓存的方法：添加 `@Cached` 注解，可选参数有 key 、expire 、type
+* 添加缓存，需要缓存的方法：添加 `@Cached` 注解，可选参数有 key 、expire 、type
 > * key: 缓存键值，默认取方法名+返回参数类型+方法参数类型 MD5 以后的值作为 Key
 > * expire：缓存的过期时间，删除策略（默认本地缓存实现 `MemoryCacheManager`）：
 > > * 主动删除，后台启动一个周期线程实时扫描当前缓存中的值，过期则删除
