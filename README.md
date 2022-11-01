@@ -41,8 +41,12 @@
 
 * 引入依赖
 
-```pom
-
+```xml
+<dependency>
+    <groupId>io.github.izachwei</groupId>
+    <artifactId>spring-boot-starter-easycache</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
 ```
 
 * SpringBoot 应用启动类上添加注解 `@EnableCache`，开启缓存功能
