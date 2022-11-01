@@ -6,16 +6,30 @@
 
     <groupId>io.github.izachwei</groupId>
     <artifactId>spring-boot-starter-easycache</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
     <name>easy-cache</name>
     <url>https://github.com/izachwei/easy-cacheo</url>
     <description>一个基于 SpringBoot 的缓存组件（starter）</description>
+
     <properties>
         <spring.version>2.6.2</spring.version>
         <guava.version>24.1-jre</guava.version>
         <apache.commons.version>3.4</apache.commons.version>
         <groovy.version>3.0.7</groovy.version>
     </properties>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>https://github.com/izachwei/easy-cacheo.git</connection>
+        <url>https://github.com/izachwei/easy-cacheo</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

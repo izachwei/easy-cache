@@ -43,9 +43,9 @@
 
 ```xml
 <dependency>
-    <groupId>io.github.izachwei</groupId>
-    <artifactId>spring-boot-starter-easycache</artifactId>
-    <version>1.0-SNAPSHOT</version>
+  <groupId>io.github.izachwei</groupId>
+  <artifactId>spring-boot-starter-easycache</artifactId>
+  <version>1.0.0-RELEASE</version>
 </dependency>
 ```
 
