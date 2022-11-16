@@ -44,7 +44,7 @@
 ```xml
 <dependency>
   <groupId>io.github.izachwei</groupId>
-  <artifactId>spring-boot-starter-easycache</artifactId>
+  <artifactId>easy-cache-spring-boot-starter</artifactId>
   <version>1.0.0-RELEASE</version>
 </dependency>
 ```
@@ -52,7 +52,7 @@
 * SpringBoot 应用启动类上添加注解 `@EnableCache`，开启缓存功能
 
 ```java
-import com.easycache.cacheapi.starter.enable.EnableCache;
+import EnableCache;
 
 @SpringBootApplication
 @EnableCache

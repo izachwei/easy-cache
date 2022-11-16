@@ -5,17 +5,29 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.izachwei</groupId>
-    <artifactId>spring-boot-starter-easycache</artifactId>
+    <artifactId>easy-cache-spring-boot</artifactId>
     <version>1.0.0-RELEASE</version>
+    <modules>
+        <module>easy-cache-spring-boot-autoconfigure</module>
+        <module>easy-cache-core</module>
+        <module>easy-cache-spring-boot-starter</module>
+    </modules>
     <name>easy-cache</name>
     <url>https://github.com/izachwei/easy-cacheo</url>
     <description>一个基于 SpringBoot 的缓存组件（starter）</description>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.2</version>
+    </parent>
 
     <properties>
-        <spring.version>2.6.2</spring.version>
+        <spring-boot.version>2.6.2</spring-boot.version>
         <guava.version>24.1-jre</guava.version>
         <apache.commons.version>3.4</apache.commons.version>
         <groovy.version>3.0.7</groovy.version>
+        <project.version>1.0.0-RELEASE</project.version>
     </properties>
 
     <licenses>
@@ -30,35 +42,39 @@
         <url>https://github.com/izachwei/easy-cacheo</url>
     </scm>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.izachwei</groupId>
+                <artifactId>easy-cache-spring-boot-autoconfigure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.izachwei</groupId>
+                <artifactId>easy-cache-spring-boot-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.izachwei</groupId>
+                <artifactId>easy-cache-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${guava.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${apache.commons.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy</artifactId>
-            <version>${groovy.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -69,11 +85,6 @@
         </dependency>
     </dependencies>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.2</version>
-    </parent>
 
     <distributionManagement>
         <snapshotRepository>

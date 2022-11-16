@@ -1,4 +1,4 @@
-package com.easycache.cacheapi.starter.enable;
+package com.easycache.cacheapi.enable;
 
 import org.springframework.context.annotation.Import;
 

@@ -1,9 +1,9 @@
-package com.easycache.cacheapi.starter.configuration;
+package com.easycache.cacheapi.enable.configuration;
 
 import com.easycache.cacheapi.core.CacheManager;
 import com.easycache.cacheapi.core.aspect.CacheAspect;
 import com.easycache.cacheapi.core.service.MemoryCacheManager;
-import com.easycache.cacheapi.starter.enable.MarkerConfiguration;
+import com.easycache.cacheapi.enable.MarkerConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
