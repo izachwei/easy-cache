@@ -6,7 +6,7 @@
 
     <groupId>io.github.izachwei</groupId>
     <artifactId>easy-cache-spring-boot</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
     <modules>
         <module>easy-cache-spring-boot-autoconfigure</module>
         <module>easy-cache-core</module>
