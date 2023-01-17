@@ -41,7 +41,7 @@ public class CacheAspect {
     private String getCacheKey(ProceedingJoinPoint jp, Cached cacheable) {
         String cacheKey = cacheable.key();
         if (ObjectUtils.isEmpty(cacheKey)) {
-            cacheKey = MD5Util.toMD5(jp.getSignature().toString());
+            cacheKey = MD5Util.toMD5(jp.getSignature().toString() + Arrays.toString(jp.getArgs()));
         }
         return cacheKey;
     }
