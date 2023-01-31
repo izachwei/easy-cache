@@ -27,7 +27,7 @@
         <guava.version>24.1-jre</guava.version>
         <apache.commons.version>3.4</apache.commons.version>
         <groovy.version>3.0.7</groovy.version>
-        <project.version>1.0.0-RELEASE</project.version>
+        <project.version>1.0.1-RELEASE</project.version>
     </properties>
 
     <licenses>

@@ -45,7 +45,7 @@
 <dependency>
   <groupId>io.github.izachwei</groupId>
   <artifactId>easy-cache-spring-boot-starter</artifactId>
-  <version>1.0.0-RELEASE</version>
+  <version>1.0.1-RELEASE</version>
 </dependency>
 ```
 
