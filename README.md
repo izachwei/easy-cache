@@ -74,6 +74,7 @@ public class StudyApplication {
 import com.easycache.cacheapi.core.annotation.CacheSourceType;
 import com.easycache.cacheapi.core.annotation.Cached;
 
+@Service
 public class CachedDemo {
   @Cached(expire = 5, timeUnit = TimeUnit.MINUTES, type = CacheSourceType.MEMORY)
   public User queryUser(String userId) {
